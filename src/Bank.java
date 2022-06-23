@@ -65,7 +65,9 @@ public class Bank {
 
     }
 
-
+    public void addAccount(Account anAcct){
+        this.accounts.add(anAcct);
+    }
 
     public Customer addCustomer(String firstName, String lastName){
 
