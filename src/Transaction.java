@@ -34,4 +34,23 @@ public class Transaction {
     }
 
 
+    public double getAmount() {
+        return this.amount;
+    }
+//see printAccountSummary in Customer.java for explanation
+    public String getSummaryLine() {
+
+        //the if relates to the deposits and the else to withdrawals, hence the () in the formatting.
+
+        //£ does not properly display here
+        if(this.amount >= 0){
+            return String.format("Date and time :%s\n Amount : %.02f\n Memo: %s\n",
+                    this.timestamp.toString(),
+                    this.amount, this.memo);
+        } else {
+            return String.format("Date and time :%s\n Amount : (%.02f)\n Memo: %s\n",
+                    this.timestamp.toString(),
+                    this.amount, this.memo);
+        }
+    }
 }

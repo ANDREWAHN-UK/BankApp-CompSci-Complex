@@ -9,6 +9,14 @@ public class Bank {
 
     private ArrayList<Account> accounts;
 
+    //in group project Account = BankAcc and the array accounts here = bankAccounts;
+
+    public Bank(String name) {
+        this.name = name;
+        this.customers = new ArrayList<Customer>();
+        this.accounts = new ArrayList<Account>();
+    }
+
     public String getNewUserID() {
         //initialise
         String id;
@@ -37,6 +45,8 @@ public class Bank {
 
     }
 
+
+    //this creates an account id, or account number for the group
     public String getNewAcctId() {
 
             String id;
@@ -82,5 +92,21 @@ public class Bank {
         this.accounts.add(newAccount);
         return newCustomer;
 
+    }
+
+    //the below lets users log in, ignoring the PIN stuff from the video
+    public Customer customerLogin(String customerID){
+        for(Customer u : this.customers){
+            if (u.getID().compareTo(customerID)==0){
+                return u;
+            }
+        }
+        //if users are not found
+        return null;
+    }
+
+    public Object getName() {
+
+        return this.name;
     }
 }
