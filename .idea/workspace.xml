@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c9a7fa-0e49-4429-98a3-0cea1e070611" name="Changes" comment="Got to 42 minutes of the video:&#10;&#10;https://youtu.be/k0BofouWX-o">
+    <list default="true" id="d8c9a7fa-0e49-4429-98a3-0cea1e070611" name="Changes" comment="Add customerLogin(), without the need for a PIN.&#10;&#10;Start populating ATM.java, instantiate a Customer + Account for testing purposes;&#10;&#10;Adjust the log message in Customer.java;&#10;&#10;Add getSummaryLine() to Account.java;&#10;&#10;Add several methods and method calls to ATM.java;&#10;&#10;Add printAccountsSummary() to Customer.java;&#10;&#10;Add getBalance() to Account.java;&#10;&#10;Add getAmount to Transaction.java;&#10;&#10;Add printAccountTransactionHistory to Customer.java;&#10;&#10;Add showTransactionHistory() code to ATM.java;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,20 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="ATM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ATM" />
+      <module name="BankApp-CompSci-Complex" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ATM" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1655981283447</updated>
       <workItem from="1655981284832" duration="4746000" />
-      <workItem from="1655989163909" duration="1900000" />
+      <workItem from="1655989163909" duration="2810000" />
+      <workItem from="1656059202269" duration="11127000" />
     </task>
     <task id="LOCAL-00001" summary="Got to 42 minutes of the video:&#10;&#10;https://youtu.be/k0BofouWX-o">
       <created>1655990398865</created>
@@ -70,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655990416678</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added addAccount();">
+      <created>1656011411495</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656011411495</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +115,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Got to 42 minutes of the video:&#10;&#10;https://youtu.be/k0BofouWX-o" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got to 42 minutes of the video:&#10;&#10;https://youtu.be/k0BofouWX-o" />
+    <MESSAGE value="Added addAccount();" />
+    <MESSAGE value="Added customerLogin(), without the need for a PIN." />
+    <MESSAGE value="Added customerLogin(), without the need for a PIN.&#10;&#10;Started populating ATM.java, instantiated a Customer for testing purposes;&#10;&#10;Adjusted the log message in Customer.java;" />
+    <MESSAGE value="Add customerLogin(), without the need for a PIN.&#10;&#10;Start populating ATM.java, instantiated a Customer for testing purposes;&#10;&#10;Adjust the log message in Customer.java;&#10;&#10;Add getSummaryLine() to Account.java;&#10;&#10;Add several methods and method calls to ATM.java;&#10;&#10;Add printAccountsSummary() to Customer.java;" />
+    <MESSAGE value="Add customerLogin(), without the need for a PIN.&#10;&#10;Start populating ATM.java, instantiate a Customer + Account for testing purposes;&#10;&#10;Adjust the log message in Customer.java;&#10;&#10;Add getSummaryLine() to Account.java;&#10;&#10;Add several methods and method calls to ATM.java;&#10;&#10;Add printAccountsSummary() to Customer.java;&#10;&#10;Add getBalance() to Account.java;&#10;&#10;Add getAmount to Transaction.java;" />
+    <MESSAGE value="Add customerLogin(), without the need for a PIN.&#10;&#10;Start populating ATM.java, instantiate a Customer + Account for testing purposes;&#10;&#10;Adjust the log message in Customer.java;&#10;&#10;Add getSummaryLine() to Account.java;&#10;&#10;Add several methods and method calls to ATM.java;&#10;&#10;Add printAccountsSummary() to Customer.java;&#10;&#10;Add getBalance() to Account.java;&#10;&#10;Add getAmount to Transaction.java;&#10;&#10;Add printAccountTransactionHistory to Customer.java;&#10;&#10;Add showTransactionHistory() code to ATM.java;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add customerLogin(), without the need for a PIN.&#10;&#10;Start populating ATM.java, instantiate a Customer + Account for testing purposes;&#10;&#10;Adjust the log message in Customer.java;&#10;&#10;Add getSummaryLine() to Account.java;&#10;&#10;Add several methods and method calls to ATM.java;&#10;&#10;Add printAccountsSummary() to Customer.java;&#10;&#10;Add getBalance() to Account.java;&#10;&#10;Add getAmount to Transaction.java;&#10;&#10;Add printAccountTransactionHistory to Customer.java;&#10;&#10;Add showTransactionHistory() code to ATM.java;" />
   </component>
 </project>
